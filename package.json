@@ -1,0 +1,17 @@
+{
+  "name": "lob-project",
+  "version": "1.0.0",
+  "description": "Assesment project for Lob",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js"
+  },
+  "author": "Patrick Thulen",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.7"
+  }
+}

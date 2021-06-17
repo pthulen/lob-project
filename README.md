@@ -15,4 +15,5 @@ To run the project locally complete the following steps:
 - In the main directory run the following script to start up the backend server and frontend 
 `npm run dev`
 
+The live site can be viewed [here](https://evening-stream-62919.herokuapp.com/)
 

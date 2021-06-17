@@ -27,7 +27,7 @@ class Form extends Component {
             return (
                 <datalist id='data'>
                         {this.state.addresses.map((address) => {
-                            return <option key={address.id} value={address.name}>{address.address_line1} {address.address_city} {address.address_state} {address.address_zip}</option>
+                            return <option key={address.id} value={address.address_full}>{address.name} {address.address_line1} {address.address_city} {address.address_state} {address.address_zip}</option>
                         })}
                 </datalist>
             )

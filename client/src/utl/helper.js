@@ -13,7 +13,7 @@ export const fetchAddresses = async () => {
             address_state: el.address_state,
             address_zip: el.address_zip,
             id: el.id,
-            address_full: `${el.address_line1} ${el.address_city}, ${el.address_state} ${el.address_country}`
+            address_full: `${el.name} ${el.address_line1} ${el.address_city}, ${el.address_state} ${el.address_country}`
         }
         addressArray.push(addressInfo)
     })

@@ -27,9 +27,6 @@ body {
   text-align: left;
 }
 
-.container {
-  width: 75%;
-}
 .container-outter{
   display: flex;
   justify-content: left;
@@ -56,6 +53,7 @@ form {
   flex-direction: column;
   margin: 2em;
   max-width: 50%;
+  width: 75%;
 }
 
 button {

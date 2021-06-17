@@ -35,7 +35,7 @@ class Form extends Component {
     render() {
         return (
             <div className="form-container">
-                <form className='container'>
+                <form >
                     <label>Description: </label>
                     <input type="text" name="description" placeholder="Describe the mail"></input>
                     <label>To: </label>

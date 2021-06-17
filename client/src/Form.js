@@ -14,22 +14,9 @@ class Form extends Component {
     componentDidMount(){
     fetchAddresses().then(res => {
         this.setState({ addresses: res })
-        console.log(this.state.addresses);
     });
     }
-    testing(){
-        if(this.state.addresses.length > 0){
-            return (
-                <div>
-                    <p>{this.state.addresses[0].name}</p>
-                    <p>{this.state.addresses[0].address_line1}</p>
-                    <p>{this.state.addresses[0].address_city}</p>
-                </div>
-            )
-        } else {
-            return null
-        }
-    }
+
     handleChange(event){
         this.setState({ selectedAddress: event.target.value})
     }
@@ -47,7 +34,7 @@ class Form extends Component {
     }
     render() {
         return (
-            <div className="container-outter" >
+            <div className="form-container">
                 <form className='container'>
                     <label>Description: </label>
                     <input type="text" name="description" placeholder="Describe the mail"></input>
@@ -62,8 +49,9 @@ class Form extends Component {
                     <input type="text" name="back"></input>
                     <button>Submit</button>
                 </form>
-                {/* {this.testing()} */}
             </div>
+
+                
         );
     }
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Form from './Form';
+import Navbar from './Navbar';
 import './App.css';
 import logo from './images/lob.svg';
 
@@ -12,7 +13,11 @@ class App extends Component {
             <img src={logo} alt="lob-logo"></img>
           </div>
         </header>
-        <Form />
+        <div className="container-outter">
+          <Navbar />
+          <Form />
+        </div>
+        
       </div>
     );
   }

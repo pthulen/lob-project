@@ -5,7 +5,6 @@ const keys = require('./config/keys');
 const app = express();
 
 app.get('/api', async (req, res) => {
-
     try {
         let response = await axios.get('https://api.lob.com/v1/addresses',
         { auth: {

@@ -21,6 +21,7 @@ class Form extends Component {
         this.setState({ selectedAddress: event.target.value})
     }
 
+    //map over fetched addresses to form list
     renderDatalist(){
         if(this.state.addresses.length > 0){
             return (
